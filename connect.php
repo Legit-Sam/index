@@ -1,20 +1,20 @@
 <?php
-	$firstName = $_POST['firstName'];
-	$lastName = $_POST['lastName'];
-	$gender = $_POST['gender'];
-	$email = $_POST['email'];
+	$fullName = $_POST['fullName'];
+	$userName = $_POST['username'];
+	$emailAddres = $_POST['emailAddres'];
 	$password = $_POST['password'];
-	$number = $_POST['number'];
+	$confirmPassword = $_POST['confirmPassword'];
+	$phoneNumbrt= $_POST['phoneNumber']
 
 	// Database connection
-	$conn = new mysqli('localhost','root','','test');
+	$conn = new mysqli('github','root','','test');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into registration(firstName, lastName, gender, email, password, number)
+		$stmt = $conn->prepare("insert into registration(fullName, userName,emailAddres,password,confirmPassword,phoneNumber)
          values(?, ?, ?, ?, ?, ?)");
-		$stmt->bind_param("sssssi", $firstName, $lastName, $gender, $email, $password, $number);
+		$stmt->bind_param("sssssi", $fullName, $userName, $emailAddres, $password, $confirmPassword, $phoneNumber);
 		$execval = $stmt->execute();
 		echo $execval;
 		echo "Registration successfully...";
