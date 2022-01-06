@@ -1,0 +1,20 @@
+
+
+.body{
+    width: 100%;
+    background: #E5E7EB;
+    position: relative;
+}
+
+#menu{
+    background: #111827;
+    width: 300px;
+    height: 100%;
+}
+
+#menu .logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0 0 30px;
+}
