@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="dash.css">
     </head>
     <body>
+        <input type="checkbox" id="nav toggle">
         <div class="sidebar">
             <div class="sidebar-brand">
                 <h1><span class="lab la-accusoft"></span>SamWeb</h1>
@@ -49,7 +50,7 @@
             <header>
                 <h1>
                 <div class="header-title">
-                    <label for="">
+                    <label for="nav-toggle">
                         <span><i class="las la-bars"></i></span>
                     </label>
                     Dashboard
@@ -63,6 +64,7 @@
                     <div>
                         <h4>Master Sam</h4>
                         <smal>Super Admin</smal>
+                        <a href="index.html">Logout</a>
                     </div>
                 </div>
             </header>
@@ -110,7 +112,7 @@
                     <div class="recent-grid">
                         <div class="project">
                                 <div class="card">
-                                    <div class="card hearder">
+                                    <div class="card-header">
                                         <h3>Recent Projects</h3>
                                         <button>See all <span><i class="lar la-arrow-alt-circle-right"></i></span></button>
                                     </div>
@@ -118,19 +120,19 @@
                                     <div class="card-body">
                                         <table width="100%">
                                         <table>
-                                            <thread>
+                                            <thead>
                                                 <tr>
                                                     <td>Project Title</td>
                                                     <td>Department</td>
                                                     <td>Status</td>
                                                 </tr>
-                                            </thread>
+                                            </thead>
                                                 <tbody>
                                                     <tr>
                                                         <td>Web Design</td>
                                                         <td>Wed Dev Team</td>
                                                         <td>
-                                                            <span class="status"></span>
+                                                            <span class="status purple"></span>
                                                             review
                                                         </td>
                                                         </tr>
@@ -138,7 +140,7 @@
                                                             <td>Creat App</td>
                                                             <td>Frontend</td>
                                                             <td>
-                                                                <span class="status"></span>
+                                                                <span class="status pink"></span>
                                                                 In progress
                                                             </td>
                                                         </tr>
@@ -147,7 +149,7 @@
                                                             <td>Web Development</td>
                                                             <td>Mobile Team</td>
                                                             <td>
-                                                                <span class="status"></span>
+                                                                <span class="status orange"></span>
                                                                 pending
                                                             </td>
                                                         </tr>
@@ -157,7 +159,7 @@
                                                         <td>Web Design</td>
                                                         <td>Wed Dev Team</td>
                                                         <td>
-                                                            <span class="status"></span>
+                                                            <span class="status purple"></span>
                                                             review
                                                         </td>
                                                         </tr>
@@ -165,7 +167,7 @@
                                                             <td>Creat App</td>
                                                             <td>Frontend</td>
                                                             <td>
-                                                                <span class="status"></span>
+                                                                <span class="status pink"></span>
                                                                 In progress
                                                             </td>
                                                         </tr>
@@ -174,33 +176,99 @@
                                                             <td>Web Development</td>
                                                             <td>Mobile Team</td>
                                                             <td>
-                                                                <span class="status"></span>
+                                                                <span class="status orange"></span>
                                                                 pending
                                                             </td>
                                                         </tr>
                                                 </tbody>
                                         </table>
-                                        
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Project Title</td>
+                                                    <td>Department</td>
+                                                    <td>Status</td>
+                                                </tr>
+                                            </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Web Design</td>
+                                                        <td>Wed Dev Team</td>
+                                                        <td>
+                                                            <span class="status purple"></span>
+                                                            review
+                                                        </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Creat App</td>
+                                                            <td>Frontend</td>
+                                                            <td>
+                                                                <span class="status pink"></span>
+                                                                In progress
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Web Development</td>
+                                                            <td>Mobile Team</td>
+                                                            <td>
+                                                                <span class="status orange"></span>
+                                                                pending
+                                                            </td>
+                                                        </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Web Design</td>
+                                                        <td>Wed Dev Team</td>
+                                                        <td>
+                                                            <span class="status purple"></span>
+                                                            review
+                                                        </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Creat App</td>
+                                                            <td>Frontend</td>
+                                                            <td>
+                                                                <span class="status pink"></span>
+                                                                In progress
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Web Development</td>
+                                                            <td>Mobile Team</td>
+                                                            <td>
+                                                                <span class="status orange"></span>
+                                                                pending
+                                                            </td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+                                        <div class="card-body">
+                                            <div class="table-responsive"></div>
+
+                                        </div>
                                     </div>
                                 </div>
                         </div>
                         <div class="customer">
                             <div class="card">
-                                <div class="card hearder">
+                                <div class="card-header">
                                     <h3>New Customers</h3>
                                     <button>See all <span><i class="lar la-arrow-alt-circle-right"></i></span></button>
                                 </div>
 
                                 <div class="card-body">
                                     <div class="customer">
-                                        <div>
+                                        <div class="info">
                                     <img src="download.jpg" width="40px" height="40px" alt="">
                                 </div>
                                     <h4>Master Sam</h4>
                                     <small>CEO Expert</small>
                              </div>
                             </div>
-                        <div>
+                        <div class="contact">
                         <span class="las la-user-circle"></span>
                         <span><i class="las la-comment-alt"></i></span>
                         <span><i class="las la-phone"></i></span>
@@ -211,7 +279,7 @@
                                 <div>
                             <img src="FB_IMG_1566761794984.jpg" width="40px" height="40px" alt="">
                         </div>
-                            <h4>Master Sam</h4>
+                            <h4>Prof Coder</h4>
                             <small>Database Expert</small>
                      </div>
                     </div>
@@ -225,7 +293,7 @@
                         <div>
                     <img src="1611173163735.jpg" width="40px" height="40px" alt="">
                 </div>
-                    <h4>Master Sam</h4>
+                    <h4>Prof Vic</h4>
                     <small>Backend Expert</small>
              </div>
             </div>
@@ -240,7 +308,7 @@
                 <div>
             <img src="FB_IMG_15768570311277279.jpg" width="40px" height="40px" alt="">
         </div>
-            <h4>Master Sam</h4>
+            <h4>Programmer Utibeabasi</h4>
             <small>Frontend  Expert</small>
      </div>
   

@@ -56,6 +56,20 @@
     color: var(--main-color);
 }
 
+.sidebar-menu a span:first-child {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+#nav-toggle:checked + .sidebar{
+    width: 70px;
+}
+
+#nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
+#nav-toggle:checked + .sidebar .li a span:last-child{
+    display: none;
+}
+
 .main-content{
     margin-left: 345px;
 }
@@ -71,6 +85,10 @@ header{
    top: 0;
    z-index: 100;
 
+}
+
+#nav-toggle{
+    display: none;
 }
 
 .header h2{
@@ -165,13 +183,101 @@ main{
 
 .card{
     background: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-.card-header{
+.card-header,
+.card-body{
     padding: 1rem;
 }
 
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.card-header button{
+    background: var(--main-color);
+    border-radius: 10px;
+    color: #fff;
+    font-size: .8rem;
+    padding: .5rem 1rem;
+    border: 1px solid var(--main-color);
+} 
+
 table{
     border-collapse: collapse;
+}
+
+thead tr {
+    border:1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+thead td{
+    font-weight: 700;
+}
+
+td{
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    color: #222;
+}
+
+td .status {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+tr td:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.status.purple {
+  background: rebeccapurple;
+}
+
+.status.pink{
+    background-color: deeppink;
+}
+.status.orange{
+    background: orangered;
+}
+
+.table-responsive{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+.info img{
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.info h4{
+    font-size: .8rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.info small{
+    font-weight: 400;
+    color: var(--text-grey);
+}
+.contact span{
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-left: .5rem;
+    color: var(--main-color);
 }
